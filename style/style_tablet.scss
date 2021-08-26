@@ -1,0 +1,239 @@
+//colors
+$primary_color: #e5e5e5;
+$secondary_color: #007bc1;
+$dark_color: #004a75;
+$overlay_color: #00407ca1;
+
+$subscribe_color: #ff8000;
+
+$font_family_1: "Open Sans", sans-serif;
+$font_family_2: "Open Sans", sans-serif;
+
+$a-1: 10px 10px 10px 10px;
+$oneside-1: 10px;
+$oneside-2: 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font_family_1;
+}
+
+p,
+a {
+  font-size: 12pt;
+}
+p {
+  line-height: 25px;
+}
+
+.ma-1 {
+  margin: $a-1;
+}
+
+.mt-1 {
+  margin-top: $oneside-1;
+}
+
+.mt-2 {
+  margin-top: $oneside-2;
+}
+
+.font-weight-100 {
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 960px) {
+  .navbar {
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+  }
+
+  .navbar-nav {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  .navbar a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .container-fluid {
+    padding: 1rem 1rem;
+  }
+
+  .primary-color {
+    color: $primary_color;
+  }
+
+  .secondary-color {
+    color: $secondary_color;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .form-control {
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .btn-outline-primary {
+    color: $primary_color;
+    border: 1px solid $primary_color;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .btn-outline-primary:hover {
+    color: $secondary_color;
+    border: 1px solid $primary_color;
+    background-color: $primary_color;
+  }
+
+  .btn-primary {
+    color: $primary_color;
+    background-color: $secondary_color;
+  }
+
+  .btn-secondary {
+    color: $secondary_color;
+    background-color: $primary_color;
+  }
+
+  .btn-subscribe {
+    color: $primary_color;
+    background-color: $subscribe_color;
+    font-weight: 800;
+  }
+
+  .dark {
+    background-color: $dark_color;
+    color: $primary_color;
+  }
+
+  .light {
+    background-color: $primary_color;
+    color: $dark_color;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .grid-item {
+    border: 1px solid #eee;
+    padding: 20px;
+  }
+
+  .grid-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .notification-panel {
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+    line-height: 1.6;
+  }
+
+  .notification-description {
+    flex: 11;
+  }
+
+  .notification-action {
+    flex: 1;
+  }
+
+  .jumbotron {
+    background: url(../assets/images/work-desk__dustin-lee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+  .overlay {
+    background-color: $overlay_color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 7rem auto;
+    line-height: 1.6;
+  }
+
+  .newsletter {
+    background-color: $overlay_color;
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+  }
+
+  .newsletter-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .newsletter-action {
+    width: 100%;
+  }
+
+  .close-newsletter {
+    cursor: pointer;
+  }
+}
