@@ -13,136 +13,7 @@ $a-1: 10px 10px 10px 10px;
 $oneside-1: 10px;
 $oneside-2: 20px;
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: $font_family_1;
-}
-
-p,
-a {
-  font-size: 12pt;
-}
-p {
-  line-height: 25px;
-}
-
-.ma-1 {
-  margin: $a-1;
-}
-
-.mt-1 {
-  margin-top: $oneside-1;
-}
-
-.mt-2 {
-  margin-top: $oneside-2;
-}
-
-.font-weight-100 {
-  font-weight: 100;
-}
-
 @media only screen and (max-width: 960px) {
-  .navbar {
-    width: 100%;
-    overflow: auto;
-    position: absolute;
-    top: 0;
-  }
-
-  .navbar-nav {
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-  }
-
-  .navbar a {
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-  }
-
-  .navbar a:hover {
-    background-color: #000;
-  }
-
-  .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .container-fluid {
-    padding: 1rem 1rem;
-  }
-
-  .primary-color {
-    color: $primary_color;
-  }
-
-  .secondary-color {
-    color: $secondary_color;
-  }
-
-  .text-center {
-    text-align: center;
-  }
-
-  .text-left {
-    text-align: left;
-  }
-
-  .text-right {
-    text-align: right;
-  }
-
-  .form-control {
-    padding: 10px 15px;
-    border: none;
-  }
-
-  .btn-outline-primary {
-    color: $primary_color;
-    border: 1px solid $primary_color;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-
-  .btn-outline-primary:hover {
-    color: $secondary_color;
-    border: 1px solid $primary_color;
-    background-color: $primary_color;
-  }
-
-  .btn-primary {
-    color: $primary_color;
-    background-color: $secondary_color;
-  }
-
-  .btn-secondary {
-    color: $secondary_color;
-    background-color: $primary_color;
-  }
-
-  .btn-subscribe {
-    color: $primary_color;
-    background-color: $subscribe_color;
-    font-weight: 800;
-  }
-
-  .dark {
-    background-color: $dark_color;
-    color: $primary_color;
-  }
-
-  .light {
-    background-color: $primary_color;
-    color: $dark_color;
-  }
-
   .grid-container {
     display: grid;
     grid-row-gap: 50px;
@@ -220,7 +91,6 @@ p {
     padding: 25px;
     position: fixed;
     bottom: 0;
-    left: 0;
     max-width: 100%;
   }
 

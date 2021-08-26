@@ -238,7 +238,10 @@ p {
 
 .newsletter-hidden {
   animation: slide-out 0.5s forwards;
-  -webkit-animation: slide-out 0.5s forwards;
+}
+
+.close-newsletter-rotate {
+  transform: rotate(180deg);
 }
 
 @keyframes slide-out {
